@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+.character {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efb6e0;
+  width: 100px;
+  height: 94px;
+  border-radius: 50px 50px 0 0;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #222;
+    right: 0px;
+    top: 58px;
+  }
+}
+.eyes {
+  display: flex;
+  gap: 10px;
+}
+.eye {
+  width: 37px;
+  height: 37px;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 13px;
+}
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: #efb6e0;
+  border-radius: 50%;
+  position: absolute;
+}
